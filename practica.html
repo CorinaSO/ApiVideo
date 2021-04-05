@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <script src="./js/main.js"></script>
+    <title>Práctica Tema 5</title>
+  </head>
+  <body onload="pintarCanvas()">
+    <canvas id="miCanvas" width="600px" height="70px">
+      Tu navegador no soporta canvas.
+      <!-- Mensaje para mostrar si el navegador no soporta la etiqueta canvas -->
+    </canvas>
+    <div class="objetos">
+      <div id="seleccion">
+        <label for="file" class="file">Seleccione video a reproducir</label>
+        <input
+          id="file"
+          type="file"
+          name="file"
+          accept="video/mp4"
+          onchange="seleccionArchivo(event)"
+          onclick="eliminar(event)"
+        />
+        <p id="error"></p>
+      </div>
+      <div id="reproductor"></div>
+    </div>
+  </body>
+</html>

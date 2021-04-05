@@ -1,0 +1,71 @@
+body {
+  background-color: aquamarine;
+  /*  background-color: black;*/
+}
+.objetos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 10px;
+  margin: 0 auto;
+}
+
+#miCanvas {
+  display: block;
+  margin: 0 auto;
+}
+
+#error {
+  color: beige;
+  align-self: center;
+}
+.rojo {
+  color: red;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.file {
+  /* border: 1px solid rgb(58, 49, 49); */
+  border-radius: 4px;
+  background-color: rgb(76, 168, 175);
+  color: rgb(36, 31, 31);
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+#video {
+  border: 4px solid rgb(10, 3, 3);
+  padding: 2px 2px;
+  margin: auto;
+  width: 600px;
+}
+
+video.loading {
+  background: black url(../imagenes/tenor.gif) center center no-repeat;
+}
+
+#botones {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.boton {
+  background-color: rgb(76, 168, 175);
+  color: rgb(36, 31, 31);
+  padding: 14px 20px;
+  margin: 8px 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+}
+
+.boton:hover {
+  background-color: rgba(76, 91, 175, 0.8);
+}
