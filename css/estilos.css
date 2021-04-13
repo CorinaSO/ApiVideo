@@ -16,7 +16,7 @@ body {
 }
 
 #error {
-  color: beige;
+  color: rgb(34, 34, 32);
   align-self: center;
 }
 .rojo {
